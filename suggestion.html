@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>URI Board Game Club</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="gameClub.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-fixed-top">
+		<!---- Include logo image--->
+		<a href="#" class="navbar-brand"><img src="pics/logo.png" alt="The Board Game Club logo. A blue hexagon with a card, die, and chess piece inside." width="100px" height="100px"></a>
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul class="navbar-nav nav-fill w-100">
+				<li class="nav-item"> <a href="index.html" class="nav-item nav-link"><button class="btn btn-light btn-lg navbar-btn"> Home </button></a> </li>
+				<li class="nav-item"> <a href="games.html" class="nav-item nav-link"><button class="btn btn-light btn-lg navbar-btn"> Games</button></a> </li>
+				<li class="nav-item"> <a href="contact.html" class="nav-item nav-link"><button class="btn btn-light btn-lg navbar-btn"> Contact</button></a> </li>
+				<li class="nav-item"> <a href="suggestion.html" class="nav-item nav-link"><button class="btn btn-light btn-lg navbar-btn"> Suggestion</button></a> </li>
+			</ul>
+		</div>
+	</nav>
+	<br>
+	<h1> Suggestions </h1>
+	<br>
+	<p>Enter a number to get a list of games in which that many players or more can play.</p>
+	<form action="mailto:jabouch98@my.uri.edu" method="POST" enctype="text/plain" name="Suggestion" id="form">
+		<label class="num" for="num">
+			Number of Players
+			<br>
+			<input type="number" name="num" id="num" required>
+		</label>
+		<input type="submit" value="submit">
+	</form>
+</body>
+</html>
